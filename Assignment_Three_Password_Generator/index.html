@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="script.js"></script>
+    <title>Password Generator</title>
+  </head>  
+  
+    <body>
+        <div class="container">
+            <header>
+                <div class="row">
+                    <div class = "title col-xs-12 col-xl-12" style="text-align: center; background-color: aliceblue; font-family: 'Times New Roman', Times, serif">
+                        <h1>Password Generator</h1>
+                    </div>
+                </div>
+            </header>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <div class="row" style="align-self: center; border-bottom: solid; border-bottom-color: lightgray; font-family: 'Times New Roman', Times, serif">
+                                <h2>Generate a Password</h2>
+                            </div>
+                        </div>
+                    </div>
+                        <div>
+                            <div class=" col-12; col-xl-12" style="border-bottom-color: lightgray; border-bottom-style: solid;">
+                                <textarea class="displayedPassword" placeholder="Your Secure Password" aria-label="Generated Password" style="border-style: dashed; height: 175px; margin: 10px;">
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="row" style="margin: 5px;">
+                            <div class="col-6">
+                                <button type="button" class="btn btn-danger" id="generateAPassword" onclick="passwordGenerate()" style="border-radius: 30px; font-family: 'Times New Roman', Times, serif">Generate a Password
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn btn-light" id="CopyToClipboard" style="border-radius: 30px;background-color: silver; font-family: 'Times New Roman', Times, serif; color: white">Copy to Clipboard
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
